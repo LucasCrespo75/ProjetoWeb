@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro de Funcionário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: white;">
+    <div>
+        <img style="width: 50%; height: 100vh; top: 0px; position: absolute; left:0px"
+            src="D:\Arquivos downloads\267114-o-que-e-educacao-40-e-como-ela-vai-mudar-o-modo-como-se-aprende-1.jpg" />
+
+        <form class="formulario" method="post" >
+            <h2 class="titulo">Cadastrar Funcionário</h2>
+
+
+            <label class="label" for="nome">
+                <input type="text" class="input-bordas" id="nome" placeholder="Nome Completo" required>
+                <span class="focus-border"> <i></i> </span>
+            </label>
+
+            <label class="label" for="email">
+                <input type="text" class="input-bordas" id="email" placeholder="E-mail" required>
+                <span class="focus-border"> <i></i> </span>
+            </label>
+
+            <label class="label" for="cpf">
+                <input type="text" class="input-bordas" id="cpf" placeholder="CPF" required>
+                <span class="focus-border"> <i></i> </span>
+            </label>
+
+            <label class="label naoexibir">
+                <span>Não preencher:</span><br>
+                <input type="text" name="url" value="">
+            </label>
+
+            <label class="label">
+                <input type="text" class="input-bordas" id="telefone" placeholder="Telefone" required>
+                <span class="focus-border"> <i></i> </span>
+            </label>
+            <div>
+                <button class="button-form borda-inversa"
+                href="/index.html">Enviar</button>
+                <button id="limpar-campos" class="button-form borda-inversa">Limpar</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <script>
+        const botaoLimpar = document.getElementById("limpar-campos");
+        botaoLimpar.addEventListener("click", function() {
+            const campos = document.querySelectorAll(".input-bordas");
+            campos.forEach(function(campo) {
+                campo.value = "";
+            });
+        });
+    </script>
+</body>
+
+</html>
