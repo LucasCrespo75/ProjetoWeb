@@ -13,7 +13,7 @@
         <img style="width: 50%; height: 100vh; top: 0px; position: absolute; left:0px"
             src="D:\Arquivos downloads\267114-o-que-e-educacao-40-e-como-ela-vai-mudar-o-modo-como-se-aprende-1.jpg" />
 
-        <form class="formulario" method="post" >
+        <form class="formulario" method="post" action="./index.html">
             <h2 class="titulo">Cadastrar Funcionário</h2>
 
 
@@ -42,21 +42,26 @@
                 <span class="focus-border"> <i></i> </span>
             </label>
             <div>
-                <button class="button-form borda-inversa"
-                href="/index.html">Enviar</button>
+                <button class="button-form borda-inversa" href="./index.html">Enviar</button>
                 <button id="limpar-campos" class="button-form borda-inversa">Limpar</button>
             </div>
-            
+
         </form>
     </div>
 
     <script>
         const botaoLimpar = document.getElementById("limpar-campos");
-        botaoLimpar.addEventListener("click", function() {
+        botaoLimpar.addEventListener("click", function () {
             const campos = document.querySelectorAll(".input-bordas");
-            campos.forEach(function(campo) {
+            campos.forEach(function (campo) {
                 campo.value = "";
             });
+        });
+        const formulario = document.getElementById("formulario");
+        formulario.addEventListener("submit", function (event) {
+            event.preventDefault(); 
+            // Redireciona para a página "/index.html"
+            window.location.href = "/index.html";
         });
     </script>
 </body>
