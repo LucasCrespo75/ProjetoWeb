@@ -283,7 +283,7 @@ body {
 
 
 
-
+/*Formulario */
 .formulario  { 
     color: #757575;
     font-size: 1.5em;
@@ -295,6 +295,8 @@ body {
   }
 .formulario h2.titulo{
     text-align: center; 
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
 
 }
   .formulario {
@@ -341,7 +343,7 @@ body {
     padding: 0.5em 1.3em;
     color: #fff;
     font-size: 1.2em;
-    border: none;
+    border-radius: 10px;
     cursor: pointer;
   
   }
@@ -368,6 +370,8 @@ body {
     
     background: none;
     color:#39f; 
+    border-radius: 10px;
+
   
   }
   
