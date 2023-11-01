@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro de Funcionário</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_form.css">
 </head>
 
-<body style="background-color: white;">
+<body>
     <div>
-        <img style="width: 50%; height: 100vh; top: 0px; position: absolute; left:0px"
-            src="D:\Arquivos downloads\267114-o-que-e-educacao-40-e-como-ela-vai-mudar-o-modo-como-se-aprende-1.jpg" />
-
+        <div>
+            <img style="width: 50%; height: 100vh; top: 0px; position: absolute; left:0px"
+                src="assets/267114-o-que-e-educacao-40-e-como-ela-vai-mudar-o-modo-como-se-aprende-1.png" />
+        </div>
         <form class="formulario" method="post" action="./index.html">
             <h2 class="titulo">Cadastrar Funcionário</h2>
 
@@ -59,7 +60,7 @@
         });
         const formulario = document.getElementById("formulario");
         formulario.addEventListener("submit", function (event) {
-            event.preventDefault(); 
+            event.preventDefault();
             // Redireciona para a página "/index.html"
             window.location.href = "/index.html";
         });
